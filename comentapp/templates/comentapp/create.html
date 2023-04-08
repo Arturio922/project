@@ -1,0 +1,20 @@
+{% extends 'diplomapp/layout.html' %}
+
+{% block title %}Форма для добавления отзыва{% endblock %}
+
+{% block diplom %}
+    <div class="features">
+        <h1>Оставьте свой отзыв</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.full_text }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Отправить</button>
+        </form>
+
+    </div>
+
+
+
+{% endblock %}

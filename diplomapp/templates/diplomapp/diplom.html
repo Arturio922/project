@@ -1,0 +1,9 @@
+{% extends 'diplomapp/layout.html' %}
+
+{% block title %}Cтраница{% endblock %}
+
+{% block diplom %}
+
+<a href="{% url 'new_user' %}"><button class="btn btn-info">Регистрация</button></a>
+<a href="{% url 'user' %}"><button class="btn btn-info">Войти</button></a>
+{% endblock %}

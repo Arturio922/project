@@ -1,0 +1,19 @@
+{% extends 'diplomapp/layout.html' %}
+
+{% block title %}Отзывы{% endblock %}
+
+{% block diplom %}
+    <div class="features">
+        <h1>Отзывы наших клиентов</h1>
+
+        {% for el in coments %}
+        <div class="alert alert-warning">
+          <h3>{{ el.title }}</h3>
+            <p>{{ el.full_text }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}
