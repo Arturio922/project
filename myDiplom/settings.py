@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-@wq56z^in-=3o21rjxnxz)7_+8a6zwy=xb$p5=gjn9%q=^$1wm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.arturo922.pythonanywhere.com', 'arturo922.pythonanyweare.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.arturo922.pythonanywhere.com', 'arturo922.pythonanywhere.com']
 #add users
 # AUTH_USER_MODEL = 'users.User'
 
@@ -119,7 +119,7 @@ STATIC_URL = 'static/'
 # STATIC_ROOT = BASE_DIR / 'static'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR / 'diplomapp/static',
 ]
 
 
